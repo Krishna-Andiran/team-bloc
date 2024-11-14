@@ -3,10 +3,10 @@ class UserModel {
   UserModel({this.name = "no-name"});
 
   factory UserModel.fromJson(Map<String, dynamic> fromJson) {
-    return UserModel(name: fromJson['name']);
+    return UserModel(name: fromJson['email']);
   }
 
   Map<String, dynamic> toJson() {
-    return {"name": name};
+    return {"email": name};
   }
 }
